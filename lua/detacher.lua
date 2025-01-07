@@ -9,7 +9,7 @@ local setup = function()
 			return
 		else
 			local ui = uis[1]
-			vim.api.nvim_chanclose(ui)
+			vim.api.nvim_chanclose(ui.chan)
 		end
 	end, {
 		desc = "Detach from the current Neovim instance",
