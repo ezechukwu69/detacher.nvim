@@ -9,6 +9,8 @@ local setup = function()
 			return
 		else
 			local ui = uis[1]
+			print(vim.inspect(uis))
+			print(vim.inspect(ui))
 			vim.api.nvim_chanclose(ui.chan)
 		end
 	end, {
